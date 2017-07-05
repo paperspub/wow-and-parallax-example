@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+h1{
+    
+    text-align:center;
+    font-size:575%;
+    color:#4A4444;
+    text-transform:uppercase;
+    letter-spacing: 3%;
+    margin:45% 0;
+}
+
+h2{
+    
+    text-align:center;
+    font-size:275%;
+    color:#E5E5E5;
+    text-transform:uppercase;
+    letter-spacing: 3%;
+    margin:0;
+}
+
+.parallax{
+    background:url("http://www.w3newbie.com/wp-content/uploads/parallax-2.jpg") repeat fixed 100%;
+}
+
+.parallax-inner{
+    
+    padding:20%;
+    
+}
+
+.content{
+    
+    height:600px;
+    background-color:#e0e0e0;
+}
+
+.about hidden{
+    max-width: 600px;
+    margin:0 auto;
+    padding:100px 0;
+    transform-style:preserve-3d;
+    transform: perspective(800px);
+    
+}
+
+.about h2{
+    text-transform: uppercase;
+    font-size:50px;
+    font-weight:400;
+}
+
+.about h2, .about p{
+    transition: alt 0.8s ease;
+}
+
+.about.hidden h2{
+    /*hide when it loads*/
+    
+    opacity:0;
+    transform:translate3d(0,0,400px) rotateY(-40deg);
+}
+
+.about.hidden p{
+    /*hide when it loads*/
+    
+    opacity:0;
+    transform:translate3d(0,0,400px) rotateY(40deg);
+}
+
+
+
